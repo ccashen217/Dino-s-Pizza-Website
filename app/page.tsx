@@ -33,10 +33,15 @@ export default function DinosPizzaPage() {
       {/* --- NAVIGATION --- */}
       <nav className="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="font-bold text-xl tracking-tight text-purple-400">
-            Dino&apos;s Pizza
+          <div className="flex items-center gap-3">
+            <div className="relative w-12 h-12">
+              <Image src="/Logo1.svg" alt="Dino's Pizza Logo" fill className="object-contain" unoptimized />
+            </div>
+            <div className="font-bold text-xl tracking-tight text-white">
+              Dino&apos;s Pizza
+            </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
              <a 
               href={phoneObj.link} 
               className="hidden sm:flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-purple-400 transition"
@@ -242,19 +247,21 @@ export default function DinosPizzaPage() {
       <footer className="bg-gray-950 border-t border-gray-800 py-12 pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-            <div>
-              <div className="font-bold text-2xl tracking-tight text-purple-400 mb-2 text-center md:text-left">
-                Dino&apos;s Pizza
+            <div className="flex flex-col items-center md:items-start">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="relative w-12 h-12">
+                  <Image src="/Logo1.svg" alt="Dino's Pizza Logo" fill className="object-contain" unoptimized />
+                </div>
+                <div className="font-bold text-2xl tracking-tight text-white">
+                  Dino&apos;s Pizza
+                </div>
               </div>
-              <p className="text-gray-400 text-center md:text-left">Perfectly Priced Pizzas in Fayetteville, NC.</p>
+              <p className="text-gray-400 text-center md:text-left italic">&quot;Let Dino&apos;s do it.&quot;</p>
             </div>
             
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href={phoneObj.link} className="flex items-center gap-2 text-gray-300 hover:text-purple-400 font-medium bg-gray-900 px-4 py-2 rounded-full transition border border-gray-800">
                 <Phone size={18} /> {phoneObj.display}
-              </a>
-              <a href={waObj.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-300 hover:text-[#25D366] font-medium bg-gray-900 px-4 py-2 rounded-full transition border border-gray-800">
-                <MessageCircle size={18} /> WhatsApp
               </a>
               <a href={`mailto:${email}`} className="flex items-center gap-2 text-gray-300 hover:text-purple-400 font-medium bg-gray-900 px-4 py-2 rounded-full transition border border-gray-800">
                 <Mail size={18} /> Email Us
