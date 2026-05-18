@@ -1,0 +1,6 @@
+{
+  "name": "Dino's Pizza Landing Page",
+  "description": "A customized landing page for Dino's Pizza in Fayetteville, NC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
